@@ -19,8 +19,8 @@ resource "aws_instance" "web" {
   instance_type = "t3.micro"
 
   tags = {
-    Name      = var.nome
-    Env       = var.environment
-    Platform  = data.aws_ami.ubuntu.platform_details
+    Name     = var.nome
+    Env      = var.environment
+    Platform = data.aws_ami.ubuntu.platform_details
   }
 }
